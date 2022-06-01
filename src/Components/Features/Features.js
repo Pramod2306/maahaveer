@@ -65,7 +65,7 @@ const Features = () => {
 					<SectionCards
 						data={{
 							title: "Cottage House",
-							img: "/image/Cottage.png",
+							img: "/image/cottage.png",
 							text: "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enimlabore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisianimcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem estaliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud offici",
 						}}
 						left={false}
