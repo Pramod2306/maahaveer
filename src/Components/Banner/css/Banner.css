@@ -1,0 +1,74 @@
+.dark-overlay{
+    background-color: rgba(5,5,5,70%);
+}
+.bannerbg_img{
+    height: 700px ;
+    
+}
+.bg-white{
+    background-color: #FFFFFF!important;
+}
+
+.curve{
+    position: absolute;
+  
+    width: 100%;
+   bottom:0;
+    z-index: 1;
+    transform: rotate(-1deg);
+    
+   overflow: hidden;
+}
+.curve::before{
+  
+}
+.curve::after{
+
+}
+.custom-shape-divider-bottom-1654086621 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1654086621 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 227px;
+}
+
+.custom-shape-divider-bottom-1654086621 .shape-fill {
+    fill: #ffffff;
+}
+
+.icon_bg{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(170, 219, 241);
+}
+.icon_bg:hover{
+    background-color: rgb(105, 199, 243);
+}
+.image_container{
+    border-radius: 10px;
+    max-width: 400px;
+    width:100%;    
+    overflow: hidden;
+}
+
+@media (max-width:900px)and (min-width:500px) {
+.bannerbg_img {
+        height: 500px;
+    }
+}
+
+@media (max-width:499px)and (min-width:100px) {
+.bannerbg_img {
+        height: 500px;
+    }
+}

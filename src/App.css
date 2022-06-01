@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.section-gap{
+  padding:10% 0px;
+}
+.sm-section-gap{
+  padding: 5% 0px;
+}
+.xs-section-gap {
+  padding: 2% 0px;
+}
+.medium-image{
+
+  width: 500px;
+
+  object-position:-100px -0px;
+  object-fit:contain;
+}
+.bg-navbar{
+background-color: rgba(5, 5, 5, 70%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mx-auto{
+  margin: auto 0!important;
+}
+.carsoule-container{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:500px;
+}
+.text-border{
+  position: relative;
+}
+
+.text-border::before{
+position: absolute;
+content: "";
+background-color:rgb(175, 175, 175);
+height: 3px;
+border-radius: 5px;
+width:800px;
+left:20%;
+bottom: -20px;
+}
+.text-border::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  border-radius: 5px;
+  background-color: rgb(13, 158, 216);
+  width: 400px;
+  left: 35%;
+  bottom: -20px;
+}
+
+@media (max-width:900px )and (min-width:500px) {
+  .text-border::before {
+     
+      left: 22%;
+      bottom:-20px;
+      width: 400px;
+    }
+  
+    .text-border::after {
+     
+      left: 35%;
+      bottom: -20px;
+        width: 200px;
+    }
+}
+@media (max-width:499px)and (min-width:100px) {
+  .text-border::before {
+    width: 320px;
+    left: 5%;
+    bottom: -20px;
+  }
+
+  .text-border::after {
+
+    left: 22%;
+    bottom: -20px;
+    width: 200px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hand{
+  height: 400px;
 }

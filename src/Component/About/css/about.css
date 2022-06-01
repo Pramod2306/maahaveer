@@ -1,0 +1,35 @@
+.about_image-container{
+    height: 500px;
+    position: relative;
+   
+    
+}
+.abt_img{
+    height: 100%;
+}
+
+.about_image{
+  
+border-radius: 10px;
+    height: 250px;
+    width: 370px;
+
+}
+
+.about_image_2{
+   
+position: absolute;
+bottom: 10%;
+left:0%;
+overflow: hidden;
+
+}
+.about_image_1 {
+   
+position: absolute;
+top:10%;
+right:0%;
+overflow: hidden;
+z-index: 1;
+
+}

@@ -1,0 +1,22 @@
+.dark-overlay {
+    background-color: rgba(5, 5, 5, 70%);
+}
+
+
+.icon_bg {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(170, 219, 241);
+}
+
+.icon_bg:hover {
+    background-color: rgb(105, 199, 243);
+}
+
+.image_container {
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+}

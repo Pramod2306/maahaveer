@@ -1,0 +1,31 @@
+body{
+background-color: black;    
+}
+.icon_bg{
+    height: 90px;
+        width: 90px;
+        border-radius: 45px;
+        transition: all 0.5s ease-in-out;
+        background-color: rgba(132, 132, 132,13%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    height:50px;
+    width: 50px;
+}
+
+.main{
+   background-color: #0C0C0C;
+    border: 1px solid #0C0C0C;
+    transition: all 0.5s ease-in-out;
+}
+
+.main:hover{
+    border: 1px solid rgb(246, 103, 0);
+}
+
+.main:hover .icon_bg{
+    background-color: rgb(0, 0, 0);
+}
