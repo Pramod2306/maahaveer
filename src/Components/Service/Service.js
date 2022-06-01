@@ -6,7 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 const Service = ({ datas }) => {
 	return (
 		<Container id='about'>
-			<Row className='section-gap overflow-hidden  '>
+			<Row className=' overflow-hidden  '>
 				{datas.map((data, index) => {
 					return (
 						<Col
