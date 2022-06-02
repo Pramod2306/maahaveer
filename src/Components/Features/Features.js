@@ -4,7 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const SectionCards = ({ left, data }) => {
 	return (
-		<div id='service' className='xs-section-gap overflow-hidden'>
+		<div className='xs-section-gap overflow-hidden'>
 			<Row className='d-flex justify-content-center align-items-center'>
 				<Col
 					xs={{ order: "first", span: 12 }}
@@ -31,7 +31,7 @@ const SectionCards = ({ left, data }) => {
 
 const Features = () => {
 	return (
-		<div className='sm-section-gap'>
+		<div id='service' className='sm-section-gap'>
 			<Container>
 				<p className='h3 text-center text-border my-2'>
 					We Fullfll Your Every Needs

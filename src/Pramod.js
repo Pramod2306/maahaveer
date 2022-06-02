@@ -1,5 +1,12 @@
 import React from "react";
-import { Header, Banner, About, Whyus } from "./Component";
+import {
+	Header,
+	Banner,
+	About,
+	Whyus,
+	ContactBanner,
+	Service,
+} from "./Component";
 import "./pramod.css";
 import { MdLocationOn, MdPhone } from "react-icons/md";
 import { Container } from "react-bootstrap";
@@ -26,6 +33,8 @@ const Pramod = () => {
 			</div>
 			<About />
 			<Whyus />
+			<ContactBanner />
+			<Service />
 		</div>
 	);
 };

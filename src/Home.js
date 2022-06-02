@@ -14,6 +14,7 @@ import "animate.css/animate.min.css";
 import { BiRupee } from "react-icons/bi";
 import { HiOutlineChatAlt2 } from "react-icons/hi";
 import { MdLocationCity, MdPeopleAlt } from "react-icons/md";
+import ScrollSpy from "react-ui-scrollspy";
 
 const Services = [
 	{
@@ -37,64 +38,65 @@ function Home() {
 	return (
 		<div>
 			<Header />
+			<ScrollSpy>
+				<Banner />
+				<ScrollAnimation animateIn='animate__fadeInUp'>
+					<Service datas={Services} />
+				</ScrollAnimation>
 
-			<Banner />
-			<ScrollAnimation animateIn='animate__fadeInUp'>
-				<Service datas={Services} />
-			</ScrollAnimation>
+				<div className='bg-light'>
+					<Container className='sm-section-gap'>
+						<ScrollAnimation animateIn='animate__fadeIn'>
+							<Row className='bg-white p-4  shadow'>
+								<Col md={12} lg={6} className='overflow-hidden'>
+									<img height={"500px"} src='/image/banner.png' alt='tet' />
+								</Col>
+								<Col md={12} lg={6} className='mx-auto'>
+									<Row className='xs-section-gap'>
+										<Col
+											xs={3}
+											md={3}
+											className='d-flex justify-content-center align-items-center'>
+											<div className='icon_bg d-flex justify-content-center align-items-center'>
+												<HiOutlineChatAlt2 fontSize={"3vw"} color='#fff' />
+											</div>
+										</Col>
+										<Col md={9} xs={9} className='d-flex flex-column '>
+											<p className='h4'>Headings</p>
+											<p className='text-secondary'>
+												Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+												reprehenderit enim labore culpa sint ad nisi Lorem
+												pariatur mollit ex esse exercitation amet. Nisi anim
+											</p>
+										</Col>
+									</Row>
+									<Row className='d-flex flex-row xs-section-gap'>
+										<Col
+											md={3}
+											xs={3}
+											className='d-flex justify-content-center align-items-center'>
+											<div className='icon_bg d-flex justify-content-center align-items-center'>
+												<HiOutlineChatAlt2 fontSize={"3vw"} color='#fff' />
+											</div>
+										</Col>
+										<Col md={9} xs={9} className='d-flex flex-column '>
+											<p className='h4'>Headings</p>
+											<p className='text-secondary'>
+												Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+												reprehenderit enim labore culpa sint ad nisi Lorem
+												pariatur mollit ex esse exercitation amet. Nisi anim
+											</p>
+										</Col>
+									</Row>
+								</Col>
+							</Row>
+						</ScrollAnimation>
+					</Container>
+				</div>
 
-			<div className='bg-light'>
-				<Container className='sm-section-gap'>
-					<ScrollAnimation animateIn='animate__fadeIn'>
-						<Row className='bg-white p-4  shadow'>
-							<Col md={12} lg={6} className='overflow-hidden'>
-								<img height={"500px"} src='/image/banner.png' alt='tet' />
-							</Col>
-							<Col md={12} lg={6} className='mx-auto'>
-								<Row className='xs-section-gap'>
-									<Col
-										xs={3}
-										md={3}
-										className='d-flex justify-content-center align-items-center'>
-										<div className='icon_bg d-flex justify-content-center align-items-center'>
-											<HiOutlineChatAlt2 fontSize={"3vw"} color='#fff' />
-										</div>
-									</Col>
-									<Col md={9} xs={9} className='d-flex flex-column '>
-										<p className='h4'>Headings</p>
-										<p className='text-secondary'>
-											Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-											reprehenderit enim labore culpa sint ad nisi Lorem
-											pariatur mollit ex esse exercitation amet. Nisi anim
-										</p>
-									</Col>
-								</Row>
-								<Row className='d-flex flex-row xs-section-gap'>
-									<Col
-										md={3}
-										xs={3}
-										className='d-flex justify-content-center align-items-center'>
-										<div className='icon_bg d-flex justify-content-center align-items-center'>
-											<HiOutlineChatAlt2 fontSize={"3vw"} color='#fff' />
-										</div>
-									</Col>
-									<Col md={9} xs={9} className='d-flex flex-column '>
-										<p className='h4'>Headings</p>
-										<p className='text-secondary'>
-											Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-											reprehenderit enim labore culpa sint ad nisi Lorem
-											pariatur mollit ex esse exercitation amet. Nisi anim
-										</p>
-									</Col>
-								</Row>
-							</Col>
-						</Row>
-					</ScrollAnimation>
-				</Container>
-			</div>
-
-			<Features />
-			<Contact />
+				<Features />
+				<Contact />
+			</ScrollSpy>
 
 			<Footer />
 		</div>

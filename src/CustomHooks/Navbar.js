@@ -5,7 +5,6 @@ const useTopFixer = () => {
 
 	useEffect(() => {
 		document.addEventListener("scroll", () => {
-			console.log(window.screenY);
 			if (window.scrollY > 400) {
 				settop(true);
 			} else {

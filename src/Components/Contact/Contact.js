@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Row, Col, Button, Container } from "react-bootstrap";
 const Contact = () => {
 	return (
-		<div id='contact' className='bg-light'>
+		<div id='contact' className='bg-light mt-5 xs-section-gap'>
 			<Container className='xs-section-gap'>
 				<p className='text-center h3 mb-4'>Contact Us</p>
 				<Row className=' pt-4'>

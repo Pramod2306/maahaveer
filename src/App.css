@@ -5,7 +5,6 @@
 }
 
 
-
 .section-gap{
   padding:10% 0px;
 }
@@ -98,3 +97,16 @@ bottom: -20px;
 .hand{
   height: 400px;
 }
+
+
+.text-orange{
+  color: #FF7F3E !important;
+} 
+
+.active-scroll-spy {
+  color: #FF7F3E !important;
+  
+}
+ .nav-link{
+  color:#fff;
+} 

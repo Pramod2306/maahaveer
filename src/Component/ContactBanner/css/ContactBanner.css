@@ -1,0 +1,26 @@
+.bg-customDark{
+    background-color: #0C0C0C;
+}
+
+.orangeContainer{
+max-height:343px;
+height: 100%;
+overflow: hidden;
+max-width:703px ;
+position: relative;
+
+}
+.contactBanner_image{
+    width: 100%;
+    object-position: 0px -400px;
+}
+.contactBanner_overlay{
+   position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    background-image: linear-gradient(to right, #0c0c0d,  #ffffff00);
+}
