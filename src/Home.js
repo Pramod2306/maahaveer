@@ -64,9 +64,9 @@ function Home() {
 						</ScrollAnimation>
 					</Container>
 				</div>
-				<ScrollAnimation animateIn='animate__fadeInUp'>
-					<Service datas={Services} />
-				</ScrollAnimation>
+
+				<Service datas={Services} />
+
 				<Features />
 				<Contact />
 			</ScrollSpy>

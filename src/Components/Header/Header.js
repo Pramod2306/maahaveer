@@ -27,7 +27,7 @@ const Header = () => {
 					</Navbar.Brand>
 					<div ref={link} className='ml-auto me-4 navbar-nav'>
 						<a
-							className='nav-link'
+							className='nav-link mx-3'
 							onClick={() => {
 								select(0);
 							}}
@@ -35,7 +35,7 @@ const Header = () => {
 							<div data-to-scrollspy-id='home'>Home</div>
 						</a>
 						<a
-							className='nav-link'
+							className='nav-link mx-3'
 							onClick={() => {
 								select(1);
 							}}
@@ -43,7 +43,7 @@ const Header = () => {
 							<div data-to-scrollspy-id='about'>About</div>
 						</a>
 						<a
-							className='nav-link'
+							className='nav-link mx-3'
 							data-to-scrollspy-id='service'
 							onClick={() => {
 								select(2);
@@ -52,7 +52,7 @@ const Header = () => {
 							Services
 						</a>
 						<a
-							className='nav-link'
+							className='nav-link mx-3'
 							data-to-scrollspy-id='contact'
 							onClick={() => {
 								select(3);
