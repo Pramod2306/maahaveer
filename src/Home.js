@@ -40,47 +40,18 @@ function Home() {
 			<Header />
 			<ScrollSpy>
 				<Banner />
-				<ScrollAnimation animateIn='animate__fadeInUp'>
-					<Service datas={Services} />
-				</ScrollAnimation>
 
-				<div className='bg-light'>
+				<div id='about' className=''>
 					<Container className='sm-section-gap'>
 						<ScrollAnimation animateIn='animate__fadeIn'>
 							<Row className='bg-white p-4  shadow'>
 								<Col md={12} lg={6} className='overflow-hidden'>
 									<img height={"500px"} src='/image/banner.png' alt='tet' />
 								</Col>
-								<Col md={12} lg={6} className='mx-auto'>
+								<Col md={12} lg={6} className=' py-4'>
 									<Row className='xs-section-gap'>
-										<Col
-											xs={3}
-											md={3}
-											className='d-flex justify-content-center align-items-center'>
-											<div className='icon_bg d-flex justify-content-center align-items-center'>
-												<HiOutlineChatAlt2 fontSize={"3vw"} color='#fff' />
-											</div>
-										</Col>
-										<Col md={9} xs={9} className='d-flex flex-column '>
-											<p className='h4'>Headings</p>
-											<p className='text-secondary'>
-												Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-												reprehenderit enim labore culpa sint ad nisi Lorem
-												pariatur mollit ex esse exercitation amet. Nisi anim
-											</p>
-										</Col>
-									</Row>
-									<Row className='d-flex flex-row xs-section-gap'>
-										<Col
-											md={3}
-											xs={3}
-											className='d-flex justify-content-center align-items-center'>
-											<div className='icon_bg d-flex justify-content-center align-items-center'>
-												<HiOutlineChatAlt2 fontSize={"3vw"} color='#fff' />
-											</div>
-										</Col>
-										<Col md={9} xs={9} className='d-flex flex-column '>
-											<p className='h4'>Headings</p>
+										<Col md={12} xs={12} className='d-flex flex-column '>
+											<p className='h4'>About</p>
 											<p className='text-secondary'>
 												Lorem ipsum dolor sit amet, officia excepteur ex fugiat
 												reprehenderit enim labore culpa sint ad nisi Lorem
@@ -93,7 +64,9 @@ function Home() {
 						</ScrollAnimation>
 					</Container>
 				</div>
-
+				<ScrollAnimation animateIn='animate__fadeInUp'>
+					<Service datas={Services} />
+				</ScrollAnimation>
 				<Features />
 				<Contact />
 			</ScrollSpy>
