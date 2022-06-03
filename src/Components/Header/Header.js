@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Navbar, Container } from "react-bootstrap";
 import useTopFixer from "../../CustomHooks/Navbar";
 const Header = () => {
 	const top = useTopFixer();
@@ -28,21 +28,19 @@ const Header = () => {
 					<div ref={link} className='ml-auto me-4 navbar-nav'>
 						<a
 							className='nav-link'
-							data-to-scrollspy-id='home'
 							onClick={() => {
 								select(0);
 							}}
 							href='#home'>
-							Home
+							<div data-to-scrollspy-id='home'>Home</div>
 						</a>
 						<a
 							className='nav-link'
-							data-to-scrollspy-id='about'
 							onClick={() => {
 								select(1);
 							}}
 							href='#about'>
-							About
+							<div data-to-scrollspy-id='about'>About</div>
 						</a>
 						<a
 							className='nav-link'
