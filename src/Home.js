@@ -38,7 +38,12 @@ function Home() {
 	return (
 		<div>
 			<Header />
-			<ScrollSpy>
+			<div
+				data-bs-spy='scroll'
+				data-bs-target='#navbar'
+				data-bs-offset='0'
+				class='text-lightBlue'
+				tabindex='0'>
 				<Banner />
 
 				<div id='about' className=''>
@@ -69,7 +74,7 @@ function Home() {
 
 				<Features />
 				<Contact />
-			</ScrollSpy>
+			</div>
 
 			<Footer />
 		</div>

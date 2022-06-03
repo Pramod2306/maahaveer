@@ -12,8 +12,17 @@ const Header = () => {
 		}
 		console.log(link.current.children[id]);
 		link.current.children[id].classList.remove("text-white");
-		link.current.children[id].classList.add("text-orange");
+		link.current.children[id].classList.add("text-lightBlue");
 	};
+
+	// const scrollSpy = () => {
+	// 	window.addEventListener("scroll", () => {
+	// 		if (window.scrollX == 0) {
+	// 			link;
+	// 		}
+	// 	});
+	// };
+
 	useEffect(() => {
 		select(0);
 	}, []);
@@ -25,14 +34,14 @@ const Header = () => {
 					<Navbar.Brand href='#home'>
 						<img style={{ height: "30px" }} src='/image/logo.png' alt='logo' />
 					</Navbar.Brand>
-					<div ref={link} className='ml-auto me-4 navbar-nav'>
+					<div id='navbar' ref={link} className='ml-auto me-4 navbar-nav'>
 						<a
 							className='nav-link mx-3'
 							onClick={() => {
 								select(0);
 							}}
 							href='#home'>
-							<div data-to-scrollspy-id='home'>Home</div>
+							<div>Home</div>
 						</a>
 						<a
 							className='nav-link mx-3'
@@ -40,11 +49,10 @@ const Header = () => {
 								select(1);
 							}}
 							href='#about'>
-							<div data-to-scrollspy-id='about'>About</div>
+							<div>About</div>
 						</a>
 						<a
 							className='nav-link mx-3'
-							data-to-scrollspy-id='service'
 							onClick={() => {
 								select(2);
 							}}
@@ -53,7 +61,6 @@ const Header = () => {
 						</a>
 						<a
 							className='nav-link mx-3'
-							data-to-scrollspy-id='contact'
 							onClick={() => {
 								select(3);
 							}}
