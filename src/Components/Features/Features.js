@@ -45,8 +45,8 @@ const Features = () => {
 						left={false}
 						data={{
 							img: "/image/mordern.png",
-							title: "Mordern House",
-							text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+							title: "READY TO MOVE IN",
+							text: "Indian real estate has grown drastically with the growing trend and population.Ready to move in has become a top pick of our customers. It helps the buyer avoid any delay due to construction",
 						}}
 					/>
 				</ScrollAnimation>
@@ -54,9 +54,9 @@ const Features = () => {
 				<ScrollAnimation animateIn='animate__fadeInUp' delay={100} animateOnce>
 					<SectionCards
 						data={{
-							title: "Appartment House",
 							img: "/image/appartment.png",
-							text: "Lorem Ipsum is simply dummy text of the printing and typesettingNisianimcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem estaliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud offici standard dummy text ever.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Lorem Ipsum is simply dummy text the printing and typesettingNisianimcupidatat excepteur standard dummy text ever.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+							title: "COMMERCIAL VENTURE",
+							text: "Investing at the right time and in the right property is a wise investment that you can reap the benefits over the years. Hence, such a venture is commercial.Investing in a large property or small for a value in return commercial venture is the best option.",
 						}}
 						left={true}
 					/>
@@ -64,9 +64,9 @@ const Features = () => {
 				<ScrollAnimation animateIn='animate__fadeInUp' delay={200} animateOnce>
 					<SectionCards
 						data={{
-							title: "Cottage House",
 							img: "/image/cottage.png",
-							text: "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enimlabore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisianimcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem estaliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud offici",
+							title: "Let’s start from “The Start”",
+							text: "The Start”, purchase of plot, construction of the house, and stepping into a new home is almost like a dream come true. It’s an analysis and pays off of sleepless nights and hard work.Hence, we are here to support and make your dream come true with fine living in the exquisite city of Bangalore.",
 						}}
 						left={false}
 					/>

@@ -29,45 +29,51 @@ const Header = () => {
 
 	return (
 		<div>
-			<Navbar className={`${top ? "bg-navbar" : "bg-transparent"}`} fixed='top'>
+			<Navbar
+				className={`${top ? "bg-navbar" : "bg-transparent"}`}
+				expand='lg'
+				fixed='top'>
 				<Container className='text-white'>
 					<Navbar.Brand href='#home'>
 						<img style={{ height: "30px" }} src='/image/logo.png' alt='logo' />
 					</Navbar.Brand>
-					<div id='navbar' ref={link} className='ml-auto me-4 navbar-nav'>
-						<a
-							className='nav-link mx-3'
-							onClick={() => {
-								select(0);
-							}}
-							href='#home'>
-							<div>Home</div>
-						</a>
-						<a
-							className='nav-link mx-3'
-							onClick={() => {
-								select(1);
-							}}
-							href='#about'>
-							<div>About</div>
-						</a>
-						<a
-							className='nav-link mx-3'
-							onClick={() => {
-								select(2);
-							}}
-							href='#service'>
-							Services
-						</a>
-						<a
-							className='nav-link mx-3'
-							onClick={() => {
-								select(3);
-							}}
-							href='#contact'>
-							Contact
-						</a>
-					</div>
+					<Navbar.Toggle aria-controls='basic-navbar-nav' />
+					<Navbar.Collapse id='basic-navbar-nav' className='header-nav'>
+						<div id='navbar' ref={link} className=' navbar-nav'>
+							<a
+								className='nav-link mx-3'
+								onClick={() => {
+									select(0);
+								}}
+								href='#home'>
+								<div>Home</div>
+							</a>
+							<a
+								className='nav-link mx-3'
+								onClick={() => {
+									select(1);
+								}}
+								href='#about'>
+								<div>About</div>
+							</a>
+							<a
+								className='nav-link mx-3'
+								onClick={() => {
+									select(2);
+								}}
+								href='#service'>
+								Services
+							</a>
+							<a
+								className='nav-link mx-3'
+								onClick={() => {
+									select(3);
+								}}
+								href='#contact'>
+								Contact
+							</a>
+						</div>
+					</Navbar.Collapse>
 				</Container>
 			</Navbar>
 		</div>

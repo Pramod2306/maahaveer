@@ -11,7 +11,7 @@ const Contact = () => {
 						sm={{ order: "last", span: 12 }}
 						md={{ order: "last", span: 12 }}
 						lg={{ order: "first", span: 5 }}
-						className='hand'>
+						className='hand overflow-hidden'>
 						<img style={{ height: "100%" }} src='/image/handnb.png' alt='' />
 					</Col>
 					<Col lg={7}>
